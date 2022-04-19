@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './../node_modules/foundation-sites/dist/css/foundation.min.css'
 
 Vue.config.productionTip = false
 
