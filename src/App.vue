@@ -4,10 +4,10 @@
     <FirstContent />
     <SecondContent :movies=movies />
     <ThirdContent />-->
-    <Header :ojt2header=ojt2header />
+    <Header :ojt2header="ojt2header" />
     <div class="nav-bar">
       <Navbar />
-      <router-view :movies=movies :ojt2title=ojt2title />
+      <router-view :movies="movies" :ojt2title="ojt2title" :bookmenus="bookmenus" />
     </div>
     <Footer />
   </div>
@@ -23,7 +23,12 @@ import ThirdContent from './components/ThirdContent.vue'
 export default {
   name: 'App',
   components: {
-    Header, Footer, Navbar, FirstContent, SecondContent, ThirdContent
+    Header,
+    Footer,
+    Navbar,
+    FirstContent,
+    SecondContent,
+    ThirdContent
   },
   data () {
     return {
@@ -45,6 +50,32 @@ export default {
         {
           name: 'India Movie'
         }
+      ],
+      bookmenus: [
+        {
+          bookname: 'Smooth of Love',
+          price: '2000',
+          author: 'Su Myat Mon Mon',
+          date: '1/8/2019'
+        },
+        {
+          bookname: 'My serious love',
+          price: '1500',
+          author: 'Yar za koe',
+          date: '1/8/2019'
+        },
+        {
+          bookname: 'Smooth of Love',
+          price: '2000',
+          author: 'Su Myat Mon Mon',
+          date: '1/8/2019'
+        },
+        {
+          bookname: 'My serious love',
+          price: '1500',
+          author: 'Yar za koe',
+          date: '1/8/2019'
+        }
       ]
     }
   }
@@ -53,7 +84,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

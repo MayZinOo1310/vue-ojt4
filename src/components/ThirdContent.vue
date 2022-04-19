@@ -2,7 +2,7 @@
   <div class="thirdojt">
     <div class="container mt-5">
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <form @submit.prevent="validate">
             <div class="form-group row mb-3">
               <label class="col-sm-3" for="name">Name:</label>

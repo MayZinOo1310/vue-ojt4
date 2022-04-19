@@ -1,4 +1,4 @@
-<template :movies=movies id="secondojt">
+<template id="secondojt">
   <div class="secondojt">
     <div class="container">
       <h2>{{ojt2title}}</h2>
@@ -17,7 +17,7 @@
 <script>
 export default {
   name: 'SecondContent',
-  template: '{{ $route.params.movies }}',
+  template: '#secondojt',
   props: {
     movies: Array,
     ojt2title: String

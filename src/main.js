@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './../node_modules/foundation-sites/dist/css/foundation.min.css'
+import { BootstrapVue } from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
+Vue.use(BootstrapVue)
 
 /* eslint-disable no-new */
 new Vue({

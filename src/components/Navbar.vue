@@ -1,18 +1,26 @@
 <template>
-    <ul>
-      <li class="nav-item">
-        <router-link class="nav-link" to="/firstcontent"
-          >FirstContent</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link class="nav-link" to="/secondcontent"
-          >SecondContent</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link class="nav-link" to="/thirdcontent"
-          >ThirdContent</router-link>
-      </li>
-    </ul>
+  <ul>
+    <li class="nav-item">
+      <router-link class="nav-link" to="/firstcontent"
+        >FirstContent</router-link
+      >
+    </li>
+    <li class="nav-item">
+      <router-link class="nav-link" to="/secondcontent"
+        >SecondContent</router-link
+      >
+    </li>
+    <li class="nav-item">
+      <router-link class="nav-link" to="/thirdcontent"
+        >ThirdContent</router-link
+      >
+    </li>
+    <li class="nav-item">
+      <router-link class="nav-link" to="/booklist"
+        >BookList</router-link
+      >
+    </li>
+  </ul>
 </template>
 <style scoped>
 .nav-bar {
